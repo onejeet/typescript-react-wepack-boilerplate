@@ -1,20 +1,11 @@
 import React from 'react';
 import { hydrate, render } from 'react-dom';
 import { Provider } from 'react-redux';
-import AOS from 'aos';
 import configureStore from './store/configureStore';
 import { ConnectedRouter } from 'connected-react-router';
 import { history } from './store/rootReducers';
 import App from './App';
 import './sass/main.scss';
-import 'aos/dist/aos.css';
-
-AOS.init({
-    once: true,
-    delay: 50,
-    duration: 500,
-    easing: 'ease-in-out'
-});
 
 //configure store
 const store = configureStore();
