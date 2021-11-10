@@ -1,0 +1,8 @@
+.vscode
+prod/
+dist/
+build/
+node_modules/
+tests/__coverage__/
+
+.DS_Store
